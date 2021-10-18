@@ -1,0 +1,86 @@
+/* em or rem on padding and margin */
+/* min-height only.. will cause overflow if contents exceed set height  */
+/* % width */
+/* max-width ch for # of characters 75 max but 45-50 is best */
+/* rem for font size relative to font size of root element which is 16px */
+/* set font size on html element to 62.5% which equals 10px so when you use rem its easier to know what to put */
+/* em for media queries */
+
+html {
+  height: 100%;
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px;
+  margin-right: 66px;
+  height: auto;
+  border-radius: 8px;
+  font-weight: 300;
+}
+
+.intro-photo-div {
+  display: flex;
+  background-color: hsl(228, 45%, 44%);
+  border-radius: 8px;
+}
+
+.photo {
+  position: relative;
+  border: 3px solid white;
+  border-radius: 73px;
+  width: 35%;
+  margin: 4em;
+}
+
+.title-smaller {
+  font-size: 0.5em;
+  opacity: 70%;
+}
+
+.report-title {
+  font-size: 3em;
+  padding: 1em;
+}
+
+.time-options {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  height: auto;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: hsl(235, 46%, 20%);
+  font-size: 2em;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.time-selections {
+  padding: 1em;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+}
