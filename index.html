@@ -24,103 +24,41 @@
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
   <body>
-    <div class="card-container">
-      <div class="intro-photo-div">
-        <img
-          src="./assets/images/site-images/image-jeremy.png"
-          class="photo"
-          alt="photo of you"
-        />
-        <h4 class="report-title">
-          <span class="title-smaller">Report for</span>
-          <br />
-          Jeremy Robson
-        </h4>
+    <main class="all-card-container">
+      <div class="card-container">
+        <div class="intro-photo-div">
+          <img
+            src="./assets/images/site-images/image-jeremy.png"
+            class="photo"
+            alt="photo of you"
+          />
+          <h1 class="report-title">
+            <span class="title-smaller">Report for</span>
+            <br />
+            Jeremy Robson
+          </h1>
+        </div>
+        <p class="time-options">
+          <button class="time-selections as-text daily-btn">Daily</button>
+          <button class="time-selections as-text weekly-btn">Weekly</button>
+          <button class="time-selections as-text monthly-btn">Monthly</button>
+        </p>
       </div>
-      <p class="time-options">
-        <span class="time-selections">Daily</span>
-        <span class="time-selections">Weekly</span>
-        <span class="time-selections">Monthly</span>
-      </p>
-    </div>
-    Work 5hrs
-    <!-- daily -->
-    Previous - 7hrs
-    <!-- daily -->
-    32hrs
-    <!-- weekly -->
-    Previous - 36hrs
-    <!-- weekly -->
-    103hrs
-    <!-- monthly -->
-    Previous - 128hrs
-    <!-- monthly -->
 
-    Play 1hr
-    <!-- daily -->
-    Previous - 2hrs
-    <!-- daily -->
-    10hrs
-    <!-- weekly -->
-    Previous - 8hrs
-    <!-- weekly -->
-    23hrs
-    <!-- monthly -->
-    Previous - 29hrs
-    <!-- monthly -->
-
-    Study 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 7hrs
-    <!-- weekly -->
-    13hrs
-    <!-- monthly -->
-    Previous - 19hrs
-    <!-- monthly -->
-
-    Exercise 1hr
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 5hrs
-    <!-- weekly -->
-    11hrs
-    <!-- monthly -->
-    Previous - 18hrs
-    <!-- monthly -->
-
-    Social 1hr
-    <!-- daily -->
-    Previous - 3hrs
-    <!-- daily -->
-    5hrs
-    <!-- weekly -->
-    Previous - 10hrs
-    <!-- weekly -->
-    21hrs
-    <!-- monthly -->
-    Previous - 23hrs
-    <!-- monthly -->
-
-    Self Care 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    2hrs
-    <!-- weekly -->
-    Previous - 2hrs
-    <!-- weekly -->
-    7hrs
-    <!-- monthly -->
-    Previous - 11hrs
-    <!-- monthly -->
-
+      <div class="card-container">
+        <div class="work-card-top"></div>
+        <div class="card-bottom">
+          <div class="card-left">
+            <h2 class="card-title"></h2>
+            <p class="card-time"></p>
+          </div>
+          <div class="card-right">
+            <div class="meatball-menu"></div>
+            <p class="previous-hours"></p>
+          </div>
+        </div>
+      </div>
+    </main>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -129,5 +67,13 @@
       <a href="https://lindsayreiner.github.io/lindsay_porfolio2.0/">Lindsay</a
       >.
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./data.json"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
   </body>
 </html>
